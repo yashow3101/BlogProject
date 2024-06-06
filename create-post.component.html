@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-md-12">
+      <form (ngSubmit)="savePost()">
+        <div class="row">
+          <div class="col-sm-5">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              class="form-control"
+              [(ngModel)]="title"
+              name="title"
+              required>
+              <span class="help-block" *ngIf="titleError" style="color: red" > {{ titleError }} </span>
+          </div>
+          <div class="col-sm-10">
+            <label for="description">Description</label>
+            <input 
+              type="text"
+              id="description"
+              class="form-control"
+              [(ngModel)]="description"
+              name="description"
+              required>
+              <span class="help-block" *ngIf="descriptionError" style="color: red" > {{ descriptionError }} </span>
+          </div>
+          <div class="btn customm-btn">
+            <button type="submit" (click)="onCreatePost(title , description)">Create Post</button>
+          </div>
+        </div>
+      </form>
+  </div>
+</div>
+
+
+
+<!-- <div class="row">
+  <div class="col-mid-12">
+    <form>  
+      <div class="row">
+        <div class="col-sm-5 form-group">
+            <label for="title">Title: </label>
+            <input
+              type="text"
+              id="title"
+              class="form-control"
+              #titleinput>
+        </div>
+        <br>
+        <div class="col-sm-10 form-group">
+          <label for="description">Description: </label>
+          <input
+            type="text"
+            id="description"
+            class="form-control"
+            #descriptioninput>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-primary" (click)="onCreatePost">Post</button>
+          <button class="btn btn-primary"(click)="onClearPost">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div> -->

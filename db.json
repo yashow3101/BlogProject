@@ -1,0 +1,5 @@
+[
+    {"id":1, "title":"My first blog", "description":"This is the first blog", "createdAt":"1", "updatedAt":"1"},
+    {"id":2, "title":"My second blog", "description":"This is the second blog", "createdAt":"2", "updatedAt":"2"},
+    {"id":3, "title":"My third blog", "description":"This is the third blog", "createdAt":"3", "updatedAt":"3"}
+]
